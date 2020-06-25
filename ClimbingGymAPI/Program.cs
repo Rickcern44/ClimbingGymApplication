@@ -10,12 +10,12 @@ namespace ClimbingGymAPI
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
-            // This code reads the connection string from appsettings.json
-            IConfigurationBuilder builder = new ConfigurationBuilder();
-            builder.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
-            IConfigurationRoot configuration = builder.Build();
-            //This is the configuration string to use for the rest of the program
-            string connectionString = configuration.GetConnectionString("ClimbingGym");
+            //// This code reads the connection string from appsettings.json
+            //IConfigurationBuilder builder = new ConfigurationBuilder();
+            //builder.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+            //IConfigurationRoot configuration = builder.Build();
+            ////This is the configuration string to use for the rest of the program
+            //string connectionString = configuration.GetConnectionString("ClimbingGym");
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

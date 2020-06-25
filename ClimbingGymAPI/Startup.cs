@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ClimbingGymAPI.DAL;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +27,16 @@ namespace ClimbingGymAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            //Database connection string
+            // This code reads the connection string from appsettings.json
+            IConfigurationBuilder builder = new ConfigurationBuilder();
+            builder.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+            IConfigurationRoot configuration = builder.Build();
+            //This is the configuration string to use for the rest of the program
+            string connectionString = configuration.GetConnectionString("ClimbingGym");
+            services.AddTransient<IGymDAO, GymSqlDAO>(sp => new GymSqlDAO(connectionString));
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
