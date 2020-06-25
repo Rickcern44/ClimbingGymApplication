@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ClimbingGymAPI.DAL;
 using ClimbingGymAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -18,10 +19,12 @@ namespace ClimbingGymAPI.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private IGymDAO _gymDAO;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IGymDAO gymDAO)
         {
             _logger = logger;
+            _gymDAO= gymDAO;
         }
 
         [HttpGet]
@@ -39,7 +42,7 @@ namespace ClimbingGymAPI.Controllers
         [HttpGet("/Gyms")]
         public List<Gym> GetGyms()
         {
-            
+            return _gymDAO.ListAllGyms();
         }
     }
 }

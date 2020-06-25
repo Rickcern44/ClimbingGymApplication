@@ -27,7 +27,6 @@ namespace ClimbingGymAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-
             //Database connection string
             // This code reads the connection string from appsettings.json
             IConfigurationBuilder builder = new ConfigurationBuilder();
@@ -35,7 +34,10 @@ namespace ClimbingGymAPI
             IConfigurationRoot configuration = builder.Build();
             //This is the configuration string to use for the rest of the program
             string connectionString = configuration.GetConnectionString("ClimbingGym");
+            //TODO 2: An error is thrown here see what the issue is tomorrow
             services.AddTransient<IGymDAO, GymSqlDAO>(sp => new GymSqlDAO(connectionString));
+            //Add a transient for the Gyms DAO 
+            services.AddTransient<IGymDAO, GymSqlDAO>();
             
         }
 
