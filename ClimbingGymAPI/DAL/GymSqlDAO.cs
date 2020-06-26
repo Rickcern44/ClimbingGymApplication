@@ -54,10 +54,10 @@ namespace ClimbingGymAPI.DAL
             gym.GymId = Convert.ToInt32(rdr["Gym Id"]);
             gym.Name = Convert.ToString(rdr["Name"]);
             //Split the Address up by spaces
-            string addressString = gym.Address.ToString();
+            string addressString = (rdr["Address1"]).ToString();
             string[] splitAddress = addressString.Split(" ");
-            string address1 = splitAddress[1] + " " + splitAddress[2] + " " + splitAddress[3];
-            Address address = new Address(gym.GymId, address1, null, splitAddress[4], splitAddress[5], splitAddress[6]);
+            string address1 = splitAddress[0] + " " + splitAddress[1] + " " + splitAddress[2];
+            Address address = new Address(gym.GymId, address1, null, splitAddress[3], splitAddress[4], splitAddress[5]);
             //Constinue adding the 
             gym.Address = address;
             gym.PhoneNumber = Convert.ToString(rdr["Phone Number"]);
@@ -66,5 +66,6 @@ namespace ClimbingGymAPI.DAL
             gym.DayPrice = Convert.ToDecimal(rdr["Day Price"]);
             return gym;
         }
+        //TODO 3: Write a method to clean up the address on the way to the user
     }
 }

@@ -37,7 +37,7 @@ namespace ClimbingGymAPI
             //TODO 2: An error is thrown here see what the issue is tomorrow
             services.AddTransient<IGymDAO, GymSqlDAO>(sp => new GymSqlDAO(connectionString));
             //Add a transient for the Gyms DAO 
-            services.AddTransient<IGymDAO, GymSqlDAO>();
+            //services.AddTransient<IGymDAO, GymSqlDAO>();
             
         }
 

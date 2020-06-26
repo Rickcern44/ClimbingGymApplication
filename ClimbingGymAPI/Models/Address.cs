@@ -8,6 +8,10 @@ namespace ClimbingGymAPI.Models
     public class Address
     {
         //Constructor 
+        public Address()
+        {
+
+        }
         public Address(int id, string address1, string address2, string city, string state, string zip)
         {
             this.Id = id;

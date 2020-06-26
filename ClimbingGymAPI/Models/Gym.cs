@@ -7,6 +7,11 @@ namespace ClimbingGymAPI.Models
 {
     public class Gym
     {
+
+        public Gym()
+        {
+            this.Address =  new Address();
+        }
         public int GymId { get; set; }
         public string Name { get; set; }
         public Address Address { get; set; }
