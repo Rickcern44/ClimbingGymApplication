@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace ClimbingGymAPI.Controllers
 {
+    //TODO 4: Write a new controller to accomodate the Gym Models
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
