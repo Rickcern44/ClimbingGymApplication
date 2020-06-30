@@ -140,7 +140,7 @@ CREATE NONCLUSTERED INDEX [fkIdx_57] ON [User Login]
 
 GO
 
---Under here I will give the db some data
+--TEST DATA
 
 --Gyms
 Insert  Gym (Name, Address1, Adress2, [Phone Number], [Max Capacity], [Attendance Counter], Email, [Day Price])
