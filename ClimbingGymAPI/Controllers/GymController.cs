@@ -32,7 +32,7 @@ namespace ClimbingGymAPI.Controllers
         {
             return _gymDAO.GetGymById(id);
         }
-
+        //TODO 5: Make the gym controller parse the object different.
         // POST api/<GymController>
         [HttpPost]
         public ActionResult<Gym> CreateGym(Gym gym)
