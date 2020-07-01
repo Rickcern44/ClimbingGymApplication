@@ -182,10 +182,20 @@ INSERT Pricing (GymId, DayPass, Monthly, Yearly)
     VALUES(3, 14.00, null, 430.34)
 
 --Why wont role work?
+Insert [Login] (UserName, [Password], Salt, Role)
+    Values ('test','test' , 123456, 'admin')
+Insert [Login] (UserName, [Password], Salt, Role)
+    Values ('view','view' , 123456, 'viewer')
+Insert [Login] (UserName, [Password], Salt, Role)
+    Values ('admin','admin' , 123456, 'admin')
 
 select * from Gym g
     join GymType gt on g.GymId = gt.GymId
     join Pricing p on p.GymId = g.GymId
+
+select * from [Login]
+
+
 
 
 
