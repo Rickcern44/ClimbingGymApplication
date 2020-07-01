@@ -43,7 +43,8 @@ C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAP
 C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAPI\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAPI\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAPI\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAPI\obj\Debug\netcoreapp3.1\ClimbingGymAPI.csproj.CoreCompileInputs.cache
-C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAPI\obj\Debug\netcoreapp3.1\ClimbingGymAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAPI\obj\Debug\netcoreapp3.1\ClimbingGymAPI.dll
 C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAPI\obj\Debug\netcoreapp3.1\ClimbingGymAPI.pdb
+C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAPI\bin\Debug\netcoreapp3.1\RestSharp.dll
+C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAPI\obj\Debug\netcoreapp3.1\ClimbingGymAPI.csproj.CoreCompileInputs.cache
+C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAPI\obj\Debug\netcoreapp3.1\ClimbingGymAPI.MvcApplicationPartsAssemblyInfo.cache

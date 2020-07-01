@@ -40,7 +40,7 @@ namespace ClimbingGymAPI.Controllers
             })
             .ToArray();
         }
-        [HttpGet("/Gyms")]
+        [HttpGet]
         public List<Gym> GetGyms()
         {
             return _gymDAO.ListAllGyms();

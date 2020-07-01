@@ -205,6 +205,15 @@
           }
         }
       },
+      "RestSharp/106.11.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -721,6 +730,22 @@
         "version.txt"
       ]
     },
+    "RestSharp/106.11.4": {
+      "sha512": "vx35q52cM3UQNOiN3UqSQ9U7I5UeoyzVmjsWKQxOxn6FVu+n01+SNwhxc/jvf92WPBmmwzTV4VYTeTg4KviJdA==",
+      "type": "package",
+      "path": "restsharp/106.11.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.106.11.4.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
+      ]
+    },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "sha512": "9kyFSIdN3T0qjDQ2R0HRXYIhS3l5psBzQi6qqhdLz+SzFyEy4sVxNOke+yyYv8Cu8rPER12c3RDjLT8wF3WBYQ==",
       "type": "package",
@@ -1135,6 +1160,7 @@
       "Microsoft.Extensions.Configuration.Binder >= 3.1.5",
       "Microsoft.Extensions.Configuration.FileExtensions >= 3.1.5",
       "Microsoft.Extensions.Configuration.Json >= 3.1.5",
+      "RestSharp >= 106.11.4",
       "System.Data.SqlClient >= 4.8.1"
     ]
   },
@@ -1198,6 +1224,10 @@
           "Microsoft.Extensions.Configuration.Json": {
             "target": "Package",
             "version": "[3.1.5, )"
+          },
+          "RestSharp": {
+            "target": "Package",
+            "version": "[106.11.4, )"
           },
           "System.Data.SqlClient": {
             "target": "Package",
