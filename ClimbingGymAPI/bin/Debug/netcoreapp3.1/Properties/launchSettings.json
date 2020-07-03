@@ -15,6 +15,9 @@
       "launchUrl": "Gym",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "routes": {
+        "cors":  "true"
       }
     },
     "ClimbingGymAPI": {

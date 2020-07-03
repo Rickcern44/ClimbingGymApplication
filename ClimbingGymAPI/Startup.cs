@@ -26,15 +26,23 @@ namespace ClimbingGymAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Add MVC
+            services.AddMvc();
+            //Add CORS 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", p => p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+            });
             services.AddControllers();
+
             //Database connection string
             // This code reads the connection string from appsettings.json
             IConfigurationBuilder builder = new ConfigurationBuilder();
             builder.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
             IConfigurationRoot configuration = builder.Build();
+
             //This is the configuration string to use for the rest of the program
             string connectionString = configuration.GetConnectionString("ClimbingGym");
-            //TODO 2: An error is thrown here see what the issue is tomorrow
             services.AddTransient<IGymDAO, GymSqlDAO>(sp => new GymSqlDAO(connectionString));
             //Add a transient for the Gyms DAO 
             //services.AddTransient<IGymDAO, GymSqlDAO>();
@@ -48,6 +56,9 @@ namespace ClimbingGymAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+            //app.UseMvc();
+
+            app.UseCors("AllowAll");
 
             app.UseHttpsRedirection();
 

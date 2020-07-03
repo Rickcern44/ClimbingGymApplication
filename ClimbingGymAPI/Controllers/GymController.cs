@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using ClimbingGymAPI.DAL;
 using ClimbingGymAPI.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
