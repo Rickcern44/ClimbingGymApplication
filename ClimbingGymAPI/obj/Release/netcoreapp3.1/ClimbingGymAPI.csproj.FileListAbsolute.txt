@@ -80,3 +80,4 @@ C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAP
 C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAPI\obj\Release\netcoreapp3.1\ClimbingGymAPI.csproj.CopyComplete
 C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAPI\obj\Release\netcoreapp3.1\ClimbingGymAPI.dll
 C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAPI\obj\Release\netcoreapp3.1\ClimbingGymAPI.pdb
+C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAPI\bin\Release\netcoreapp3.1\Properties\serviceDependencies.local.json

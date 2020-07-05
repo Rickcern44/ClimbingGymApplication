@@ -78,5 +78,4 @@ C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAP
 C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAPI\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.ClimbingGymAPI - Web Deploy.json
 C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAPI\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
 C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAPI\obj\Debug\netcoreapp3.1\ClimbingGymAPI.csproj.CoreCompileInputs.cache
 C:\Users\Student\SideProject\ClimbingGymApplication\ClimbingGymAPI\ClimbingGymAPI\obj\Debug\netcoreapp3.1\ClimbingGymAPI.MvcApplicationPartsAssemblyInfo.cache

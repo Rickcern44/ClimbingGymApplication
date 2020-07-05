@@ -1,11 +1,5 @@
 {
   "dependencies": {
-    "mssql1": {
-      "resourceId": null,
-      "type": "mssql.onprem",
-      "connectionId": "ClimbingGym",
-      "secretStore": "AzureAppSettings"
-    },
     "mssql2": {
       "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroup')]/providers/Microsoft.Sql/servers/climbinggym/databases/ClimbingGymDB",
       "type": "mssql.azure",
